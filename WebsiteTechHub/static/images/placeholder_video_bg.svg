@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+    <rect width="800" height="400" fill="#2c3e50"/>
+    <circle cx="400" cy="200" r="80" fill="#3498db"/>
+    <path d="M380 160 L420 200 L380 240" fill="none" stroke="#ecf0f1" stroke-width="8"/>
+    <text x="400" y="320" text-anchor="middle" fill="#ecf0f1" font-family="Arial" font-size="24">Technology &amp; Innovation</text>
+</svg>
