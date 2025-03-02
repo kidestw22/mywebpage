@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome to My Website!{% endblock %}
+
+{% block content %}
+<div class="video-background">
+    <video autoplay loop muted playsinline class="fullscreen-video" id="bgVideo">
+        <source src="{{ url_for('static', filename='videos/video.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay"></div>
+</div>
+
+<main class="container position-relative">
+    <section class="hero-section text-center py-5">
+        <h1 class="display-4 mb-4">Welcome to My Website!</h1>
+
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-8">
+                <div class="profile-card p-4 rounded-3">
+                    <div class="profile-image">
+                        <img src="{{ url_for('static', filename='images/portrait.jpg') }}" 
+                             alt="Kidest Wasihun's Portrait" 
+                             class="img-fluid">
+                    </div>
+                    <div class="profile-content">
+                        <p class="lead">
+                            Hi! I'm Kidest Wasihun, a <span class="highlight">Master of Science in Information Systems</span> student at the <span class="highlight">University of Washington</span>.
+                            I have a background in <span class="highlight">Digital Insights, Data Analytics, and Marketing Technology</span>, with experience in
+                            <span class="highlight">Python, SQL, and R</span>.
+                        </p>
+                        <a href="{{ url_for('content') }}" class="btn btn-primary btn-lg mt-4">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
